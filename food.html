@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food & Dining</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Food-specific styles */
+    .dining {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .dining h1 {
+      text-align: center;
+      color: #ff8670;
+      margin-bottom: 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dining-category {
+      margin-bottom: 50px;
+    }
+
+    .dining-category h2 {
+      color: #69b599;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+    }
+
+    .dining-item {
+      display: flex;
+      margin-bottom: 30px;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .dining-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .dining-item img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .dining-info {
+      flex: 1;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .dining-info h3 {
+      color: #2a4d69;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .dining-info p {
+      color: #667389;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .highlight-text {
+      color: #ff8670;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+
+    /* Tips section */
+    .dining-tips {
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .dining-tips h2 {
+      color: #69b599;
+      margin-bottom: 15px;
+    }
+
+    .dining-tips ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .dining-tips li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .dining-tips li:before {
+      content: "•";
+      color: #ff8670;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -3px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .dining-item {
+        flex-direction: column;
+      }
+
+      .dining-item img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .dining {
+        padding: 20px 15px;
+      }
+
+      .dining-info {
+        padding: 20px;
+      }
+
+      .dining h1 {
+        font-size: 2rem;
+      }
+
+      .dining-category h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">
+    <h1>Discover Taniti</h1>
+    <p>Your Island Paradise</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="food.html" class="active">Food & Dining</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="transportation.html">Transportation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="dining">
+    <h1>Food & Dining</h1>
+
+    <div class="dining-category">
+      <h2>Restaurants</h2>
+
+      <div class="dining-item">
+        <img src="img/food.jpg" alt="Local Tanitian Cuisine">
+        <div class="dining-info">
+          <h3>Local Tanitian Cuisine</h3>
+          <p>Five restaurants specializing in fresh local fish served with coconut rice and tropical fruits. Try our signature grilled mahi-mahi or banana-leaf-wrapped seafood dishes.</p>
+          <p class="highlight-text">Best for: Authentic island flavors • Average meal: $12-20</p>
+        </div>
+      </div>
+
+      <div class="dining-item">
+        <img src="img/food1.jpg" alt="American-Style Meals">
+        <div class="dining-info">
+          <h3>American-Style Meals</h3>
+          <p>Three restaurants offering familiar comfort food including burgers, steaks, and classic American dishes. Perfect for travelers craving a taste of home.</p>
+          <p class="highlight-text">Best for: Family dining • Average meal: $15-25</p>
+        </div>
+      </div>
+
+      <div class="dining-item">
+        <img src="img/food2.jpg" alt="Pan-Asian Cuisine">
+        <div class="dining-info">
+          <h3>Pan-Asian Cuisine</h3>
+          <p>Two restaurants featuring a mix of Thai, Japanese, and Chinese dishes. Enjoy sushi, stir-fries, curries, and other Asian favorites with island ingredients.</p>
+          <p class="highlight-text">Best for: Variety • Average meal: $18-30</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dining-category">
+      <h2>Grocery Options</h2>
+
+      <div class="dining-item">
+        <img src="img/market.jpg" alt="Supermarkets">
+        <div class="dining-info">
+          <h3>Supermarkets</h3>
+          <p>Two full-service supermarkets offering everything from fresh produce to local specialties. Stock up for your stay or grab picnic supplies.</p>
+          <p class="highlight-text">Open daily 8am-9pm • Located in Taniti City</p>
+        </div>
+      </div>
+
+      <div class="dining-item">
+        <img src="img/store.jpg" alt="Convenience Store">
+        <div class="dining-info">
+          <h3>24-Hour Convenience Store</h3>
+          <p>One always-open store for late-night snacks, drinks, and basic supplies. Perfect for emergencies or midnight cravings.</p>
+          <p class="highlight-text">Open 24/7 • Near Merriton Landing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dining-tips">
+      <h2>Dining Tips & Policies</h2>
+      <ul>
+        <li><strong>Alcohol Laws:</strong> Not served or sold between midnight and 9:00 a.m.</li>
+        <li><strong>Drinking Age:</strong> 18 years old (enforcement is relaxed)</li>
+        <li><strong>Payment:</strong> Most accept U.S. dollars, euros, yen, and major credit cards</li>
+        <li><strong>Holiday Closures:</strong> Some restaurants close during national holidays</li>
+        <li><strong>Local Specialties:</strong> Try coconut rice pudding and tropical fruit platters</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Taniti Tourism Board</p>
+  <p>service@visittaniti.com | +1 (800) 555-5555</p>
+</footer>
+</body>
+</html>

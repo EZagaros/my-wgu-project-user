@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transportation | Taniti Island</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Transportation-specific styles */
+    .transportation-main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .transportation-main h1 {
+      text-align: center;
+      color: #ff8670;
+      margin: 40px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .transportation-section {
+      margin-bottom: 60px;
+    }
+
+    .transport-item {
+      display: flex;
+      margin-bottom: 40px;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .transport-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .transport-item img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .transport-info {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .transport-info h2 {
+      color: #69b599;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .transport-info p {
+      color: #667389;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .transport-icon {
+      font-size: 2rem;
+      color: #ff8670;
+      margin-right: 15px;
+    }
+
+    .transport-highlight {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-left: 4px solid #69b599;
+      margin: 20px 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .transport-item {
+        flex-direction: column;
+      }
+
+      .transport-item img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .transportation-main {
+        padding: 20px 15px;
+      }
+
+      .transport-info {
+        padding: 20px;
+      }
+
+      .transportation-main h1 {
+        font-size: 2rem;
+      }
+
+      .transport-info h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">
+    <h1>Discover Taniti</h1>
+    <p>Your Island Paradise</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="food.html">Food & Dining</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="transportation.html" class="active">Transportation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="transportation-main">
+  <h1>Getting to Taniti</h1>
+
+  <div class="transport-item">
+    <img src="img/air.jpg" alt="Taniti Airport">
+    <div class="transport-info">
+      <h2><span class="transport-icon"></span> By Air</h2>
+      <p>Most visitors fly into Taniti's small airport, which currently accommodates jets and propeller planes. Exciting expansion plans will soon allow larger aircraft to land, making your journey even more convenient.</p>
+      <div class="transport-highlight">
+        <p><strong>Airport Code:</strong> TNT | <strong>Airlines:</strong> Island Air, Pacific Connect, Taniti Express</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="transport-item">
+    <img src="img/boat.jpg" alt="Cruise Ship in Yellow Leaf Bay">
+    <div class="transport-info">
+      <h2><span class="transport-icon"></span> By Sea</h2>
+      <p>Experience the romance of ocean travel as our small cruise ship docks weekly at picturesque Yellow Leaf Bay. Perfect for travelers who want to combine their island stay with a memorable sea journey.</p>
+      <div class="transport-highlight">
+        <p><strong>Cruise Line:</strong> Island Odyssey Cruises | <strong>Docking Day:</strong> Every Saturday</p>
+      </div>
+    </div>
+  </div>
+
+  <h1>Getting Around Taniti</h1>
+
+  <div class="transport-item">
+    <img src="img/insidebus.jpg" alt="Taniti Public Bus">
+    <div class="transport-info">
+      <h2><span class="transport-icon"></span> Public Transportation</h2>
+      <p>Our efficient transit system makes exploring easy. Public buses serve Taniti City from 5 a.m. to 11 p.m. daily, while private buses connect you to more remote island locations.</p>
+      <div class="transport-highlight">
+        <p><strong>Fares:</strong> $2 per ride or $10 unlimited day pass | <strong>Taxi Stands:</strong> Available at all major hotels and attractions</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="transport-item">
+    <img src="img/bike.jpg" alt="Bike Rental Station">
+    <div class="transport-info">
+      <h2><span class="transport-icon"></span> Bike & Walking</h2>
+      <p>Taniti City's flat terrain makes it perfect for walking and cycling. Rent bikes by the hour or day from numerous locations near popular tourist areas.</p>
+      <div class="transport-highlight">
+        <p><strong>Safety Note:</strong> Helmets are required by law and provided with all rentals | <strong>Walking Tours:</strong> Available daily at 9am and 2pm</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="transport-item">
+    <img src="img/car.jpg" alt="Car Rental Lot">
+    <div class="transport-info">
+      <h2><span class="transport-icon"></span> Car Rentals</h2>
+      <p>For maximum flexibility, rent a car from our airport location or downtown Taniti City. Drive on well-maintained roads and explore at your own pace.</p>
+      <div class="transport-highlight">
+        <p><strong>Requirements:</strong> Valid driver's license | <strong>Note:</strong> Driving is on the right side of the road</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2025 Taniti Tourism Board</p>
+  <p>service@visittaniti.com | +1 (800) 555-5555</p>
+</footer>
+</body>
+</html>

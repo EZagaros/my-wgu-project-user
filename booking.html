@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking | Taniti Island Paradise</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Enhanced Booking Page Styles */
+    .booking-hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/beach3.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 0 20px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .booking-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    .lodging-options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .lodging-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid #ff8670;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lodging-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .luxury-card { border-top-color: #ff6b6b; }
+    .villa-card { border-top-color: #69b599; }
+    .bungalow-card { border-top-color: #4caf50; }
+
+    .card-icon {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #ff8670;
+    }
+
+    .luxury-card .card-icon { color: #ff6b6b; }
+    .villa-card .card-icon { color: #69b599; }
+    .bungalow-card .card-icon { color: #4caf50; }
+
+    .price {
+      font-size: 1.4rem;
+      color: #ff8670;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .amenities {
+      margin-top: auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    .amenities li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .lodging-options {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-hero {
+        height: 250px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">
+    <h1>Discover Taniti</h1>
+    <p>Your Island Paradise</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="food.html">Food & Dining</a></li>
+      <li><a href="booking.html"  class="active">Booking</a></li>
+      <li><a href="transportation.html">Transportation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero with Stunning Image Background -->
+<section class="booking-hero">
+  <div class="hero-content">
+    <h1 style="font-size: 2.8rem; margin-bottom: 15px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">Your Dream Taniti Getaway</h1>
+    <p style="font-size: 1.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Find and book your perfect island escape</p>
+  </div>
+</section>
+
+<!-- Main Booking Content -->
+<main class="booking-container">
+  <!-- Accommodation Options - 2 per row -->
+  <section class="lodging-gallery">
+    <h2 class="section-title" style="text-align: center; margin-bottom: 10px; color: #ff8670; font-family: 'Playfair Display', serif;">Our Accommodations</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 30px; color: #667389;">Choose from our carefully selected lodging options to suit every traveler's needs</p>
+
+    <div class="lodging-options">
+      <!-- Beachside Hotel -->
+      <div class="lodging-card">
+        <div class="card-icon">🏨</div>
+        <h3>Beachside Hotel</h3>
+        <p class="price">From $120/night</p>
+        <p style="color: #667389; line-height: 1.6;">Our most popular option offering comfortable rooms just steps from Taniti's famous white sand beaches. Perfect for couples and solo travelers.</p>
+        <ul class="amenities">
+          <li><span>🏖️</span> Beachfront location</li>
+          <li><span>🍽️</span> Oceanview restaurant</li>
+          <li><span>🏊</span> Infinity pool</li>
+          <li><span>🛌</span> King/Queen beds</li>
+        </ul>
+      </div>
+
+      <!-- Luxury Resort -->
+      <div class="lodging-card luxury-card">
+        <div class="card-icon">✨</div>
+        <h3>Luxury Resort</h3>
+        <p class="price">From $350/night</p>
+        <p style="color: #667389; line-height: 1.6;">Indulge in our 5-star resort featuring premium amenities, private beach access, and world-class service.</p>
+        <ul class="amenities">
+          <li><span>♨️</span> Full-service spa</li>
+          <li><span>🍸</span> 3 Specialty bars</li>
+          <li><span>⛱️</span> Private cabanas</li>
+          <li><span>🍣</span> Gourmet dining</li>
+        </ul>
+      </div>
+
+      <!-- Private Villa -->
+      <div class="lodging-card villa-card">
+        <div class="card-icon">🏡</div>
+        <h3>Private Villa</h3>
+        <p class="price">From $280/night</p>
+        <p style="color: #667389; line-height: 1.6;">Spacious private villas perfect for families or groups, featuring full kitchens and stunning ocean views.</p>
+        <ul class="amenities">
+          <li><span>👨‍👩‍👧‍👦</span> 2-4 bedrooms</li>
+          <li><span>🍳</span> Full kitchen</li>
+          <li><span>🏊</span> Private pool</li>
+          <li><span>🌅</span> Panoramic views</li>
+        </ul>
+      </div>
+
+      <!-- Island Bungalow -->
+      <div class="lodging-card bungalow-card">
+        <div class="card-icon">🏝️</div>
+        <h3>Island Bungalow</h3>
+        <p class="price">From $150/night</p>
+        <p style="color: #667389; line-height: 1.6;">Authentic Tanitian experience with traditional thatched-roof bungalows right on the beach.</p>
+        <ul class="amenities">
+          <li><span>🌊</span> Direct beach access</li>
+          <li><span>🛏️</span> Queen/Twin options</li>
+          <li><span>🍍</span> Daily fruit basket</li>
+          <li><span>🌴</span> Private patio</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form Section -->
+  <section class="booking-form-section" style="background: #f8f8f8; padding: 40px; border-radius: 10px; margin-top: 50px;">
+    <h2 class="section-title" style="text-align: center; margin-bottom: 30px; color: #ff8670; font-family: 'Playfair Display', serif;">Reserve Your Stay</h2>
+
+    <form class="booking-form" style="max-width: 800px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+        <!-- Guest Info Column -->
+        <div>
+          <h3 style="color: #69b599; margin-bottom: 20px; font-size: 1.2rem;">Guest Information</h3>
+          <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Full Name*</label>
+            <input type="text" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+          <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Email*</label>
+            <input type="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Phone</label>
+            <input type="tel" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+        </div>
+
+        <!-- Stay Details Column -->
+        <div>
+          <h3 style="color: #69b599; margin-bottom: 20px; font-size: 1.2rem;">Stay Details</h3>
+          <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Check-in*</label>
+            <input type="date" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+          <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Check-out*</label>
+            <input type="date" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Guests*</label>
+            <input type="number" min="1" value="1" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Lodging Selection -->
+      <div style="margin-bottom: 30px;">
+        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #667389;">Preferred Accommodation*</label>
+        <select required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; background: white;">
+          <option value="">Select an option</option>
+          <option value="hotel">Beachside Hotel (From $120)</option>
+          <option value="resort">Luxury Resort (From $350)</option>
+          <option value="villa">Private Villa (From $280)</option>
+          <option value="bungalow">Island Bungalow (From $150)</option>
+        </select>
+      </div>
+
+      <!-- Activities -->
+      <div style="margin-bottom: 30px;">
+        <label style="display: block; margin-bottom: 15px; font-weight: bold; color: #667389;">Optional Activities</label>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+          <label style="background: white; padding: 15px; border-radius: 5px; border: 1px solid #eee; cursor: pointer; transition: all 0.2s;">
+            <input type="checkbox" name="activities" value="tour" style="margin-right: 8px;">
+            <span style="font-weight: bold;">Island Tour</span>
+            <span style="display: block; color: #ff8670; margin: 5px 0;">$50</span>
+            <span style="display: block; font-size: 0.9rem; color: #667389;">3-hour guided tour</span>
+          </label>
+          <label style="background: white; padding: 15px; border-radius: 5px; border: 1px solid #eee; cursor: pointer; transition: all 0.2s;">
+            <input type="checkbox" name="activities" value="hike" style="margin-right: 8px;">
+            <span style="font-weight: bold;">Volcano Hike</span>
+            <span style="display: block; color: #ff8670; margin: 5px 0;">$35</span>
+            <span style="display: block; font-size: 0.9rem; color: #667389;">Morning adventure</span>
+          </label>
+          <label style="background: white; padding: 15px; border-radius: 5px; border: 1px solid #eee; cursor: pointer; transition: all 0.2s;">
+            <input type="checkbox" name="activities" value="snorkel" style="margin-right: 8px;">
+            <span style="font-weight: bold;">Snorkeling</span>
+            <span style="display: block; color: #ff8670; margin: 5px 0;">$45</span>
+            <span style="display: block; font-size: 0.9rem; color: #667389;">Reef exploration</span>
+          </label>
+          <label style="background: white; padding: 15px; border-radius: 5px; border: 1px solid #eee; cursor: pointer; transition: all 0.2s;">
+            <input type="checkbox" name="activities" value="festival" style="margin-right: 8px;">
+            <span style="font-weight: bold;">Cultural Night</span>
+            <span style="display: block; color: #ff8670; margin: 5px 0;">$60</span>
+            <span style="display: block; font-size: 0.9rem; color: #667389;">Dance & dinner</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <button type="submit" style="background: #ff8670; color: white; border: none; padding: 15px 30px; font-size: 1.1rem; border-radius: 5px; cursor: pointer; transition: background 0.3s;">
+          Submit Booking Request
+        </button>
+        <p style="margin-top: 20px; color: #667389; font-size: 0.9rem;">*Required fields. We'll confirm your booking within 24 hours.</p>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Taniti Tourism Board</p>
+  <p>service@visittaniti.com | +1 (800) 555-5555</p>
+</footer>
+</body>
+</html>

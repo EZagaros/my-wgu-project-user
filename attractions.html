@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attractions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Additional attractions-specific styles */
+    .attractions {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .attractions h1 {
+      text-align: center;
+      color: #ff8670;
+      margin-bottom: 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .attraction-item {
+      display: flex;
+      margin-bottom: 40px;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .attraction-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .attraction-item img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .attraction-info {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .attraction-info h2 {
+      color: #69b599;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .attraction-info p {
+      color: #667389;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .highlight-text {
+      color: #ff8670;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .attraction-item {
+        flex-direction: column;
+      }
+
+      .attraction-item img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .attractions {
+        padding: 20px 15px;
+      }
+
+      .attraction-info {
+        padding: 20px;
+      }
+
+      .attractions h1 {
+        font-size: 2rem;
+      }
+
+      .attraction-info h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">
+    <h1>Discover Taniti</h1>
+    <p>Your Island Paradise</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="attractions.html" class="active">Attractions</a></li>
+      <li><a href="food.html">Food & Dining</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="transportation.html">Transportation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="attractions">
+    <h1>Attractions</h1>
+
+    <!-- Natural Attractions -->
+    <div class="attraction-item">
+      <img src="img/beach.jpg" alt="Taniti Beaches">
+      <div class="attraction-info">
+        <h2>Pristine Beaches</h2>
+        <p>Taniti offers both sandy and rocky beaches encircling Yellow Leaf Bay. Enjoy sunbathing on white sands, snorkeling in crystal-clear waters, or exploring tide pools along our scenic coastline.</p>
+        <p class="highlight-text">Best beaches near Taniti City • Free access • Snorkel gear rentals available</p>
+      </div>
+    </div>
+
+    <div class="attraction-item">
+      <img src="img/zipline.jpg" alt="Rainforest Adventures">
+      <div class="attraction-info">
+        <h2>Lush Rainforests</h2>
+        <p>Explore our tropical rainforests through guided hikes or exhilarating zip-line tours. Discover exotic wildlife, cascading waterfalls, and breathtaking views from canopy platforms.</p>
+        <p class="highlight-text">Zip-line tours daily • Hiking trails for all levels • Guided tours $35-75</p>
+      </div>
+    </div>
+
+    <div class="attraction-item">
+      <img src="img/trail.jpg" alt="Taniti Volcano">
+      <div class="attraction-info">
+        <h2>Active Volcano</h2>
+        <p>Visit Taniti's small but active volcano in the mountainous interior. Safe viewing areas allow you to witness steam vents and learn about the island's dramatic geology.</p>
+        <p class="highlight-text">Bus tours available • Best views at sunset • Volcanic rock souvenirs</p>
+      </div>
+    </div>
+
+    <!-- Cultural & Entertainment -->
+    <div class="attraction-item">
+      <img src="img/history.jpg" alt="History Museum">
+      <div class="attraction-info">
+        <h2>Taniti History Museum</h2>
+        <p>Learn about the island's indigenous culture and colonial history through artifacts, photographs, and interactive exhibits. The museum showcases Taniti's transition from fishing village to tourist destination.</p>
+        <p class="highlight-text">Open Tuesday-Sunday • $5 admission • English tours at 11am & 2pm</p>
+      </div>
+    </div>
+
+    <div class="attraction-item">
+      <img src="img/tour.jpg" alt="Merriton Landing">
+      <div class="attraction-info">
+        <h2>Merriton Landing</h2>
+        <p>This rapidly developing area on the north side of Yellow Leaf Bay features art galleries, a microbrewery, dance club, movie theater, arcade, bowling alley, and helicopter tour operators.</p>
+        <p class="highlight-text">Nightlife hub • Family-friendly by day • New golf course opening soon</p>
+      </div>
+    </div>
+
+    <!-- Water Activities -->
+    <div class="attraction-item">
+      <img src="img/sea.jpg" alt="Snorkeling">
+      <div class="attraction-info">
+        <h2>Water Adventures</h2>
+        <p>Enjoy chartered fishing tours, snorkeling in coral reefs, or boat tours around the island. Our small but safe harbor offers easy access to marine excursions.</p>
+        <p class="highlight-text">Equipment rentals available • Half-day tours from $50 • Best spots near the harbor</p>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="attraction-item">
+      <img src="img/golf.jpg" alt="Golf Course">
+      <div class="attraction-info">
+        <h2>Coming Soon: Golf Course</h2>
+        <p>A new nine-hole golf course is under construction and will be operational next year, offering players stunning ocean views amidst tropical scenery.</p>
+        <p class="highlight-text">Opening 2026 • Pro shop • Club rentals available</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Taniti Tourism Board</p>
+  <p>service@visittaniti.com | +1 (800) 555-5555</p>
+</footer>
+</body>
+</html>
